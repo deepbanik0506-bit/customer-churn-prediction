@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 📊 Customer Churn Prediction
 🎯 Objective
 
@@ -40,3 +41,6 @@ Precision (Churn): ~52%
 📌 Key Insight
 
 Lowering the decision threshold increased recall significantly, demonstrating the trade-off between detecting churners and minimizing false positives.
+=======
+# customer-churn-predictor
+>>>>>>> 4087487b980c5b9606c871c48aa8740bd3ab6ac0
