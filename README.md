@@ -1,46 +1,68 @@
-<<<<<<< HEAD
-📊 Customer Churn Prediction
-🎯 Objective
+# 📊 Customer Churn Prediction
 
-Build a machine learning model to predict customer churn for a telecom company.
+## 🎯 Project Overview
+This project builds a machine learning model to predict customer churn for a telecom company.
 
-🧠 Problem Statement
+Customer churn directly impacts recurring revenue. The goal is to identify customers likely to leave so that targeted retention strategies can be applied.
 
-Customer churn leads to revenue loss. The goal is to identify customers likely to leave so that retention strategies can be applied.
+---
 
-📁 Dataset
+## 🧠 Problem Statement
+Customer churn leads to revenue loss. From a business perspective:
 
+- False Negatives (missed churners) → Lost customers → Revenue loss  
+- False Positives (incorrect churn prediction) → Unnecessary retention cost  
+
+The model must balance churn detection with operational constraints.
+
+---
+
+## 📁 Dataset
 Synthetic Telecom Customer Churn Dataset (100,000 records).
 
-⚙️ Steps Performed
+Features include:
+- Age
+- Tenure
+- Monthly Charges
+- Total Charges
+- Contract Type
+- Payment Method
+- Gender
 
-Data cleaning & preprocessing
+Target:
+`Churn (Yes / No)`
 
-One-hot encoding for categorical variables
+---
 
-Stratified train-test split
+## ⚙️ Methodology
 
-Logistic Regression & Random Forest models
+- Data cleaning & preprocessing  
+- One-hot encoding for categorical variables  
+- Stratified train-test split (80/20)  
+- Logistic Regression & Random Forest models  
+- Class imbalance handling  
+- Decision threshold tuning  
+- Model evaluation using precision, recall, F1-score  
 
-Class imbalance handling
+---
 
-Decision threshold tuning
+## 🏆 Final Model
 
-Model evaluation using precision, recall, F1-score
+**Balanced Logistic Regression (threshold = 0.5)**
 
-🏆 Final Model
+Accuracy: ~69%  
+Recall (Churn): ~70%  
+Precision (Churn): ~52%  
 
-Balanced Logistic Regression (threshold = 0.5)
+Lowering the threshold to 0.4 increased recall to ~82%, demonstrating the trade-off between detecting churners and minimizing false positives.
 
-Accuracy: ~69%
+---
 
-Recall (Churn): ~70%
+## 📌 Key Insight
 
-Precision (Churn): ~52%
+Customers with short-term contracts are significantly more likely to churn.  
+Longer contract durations and higher tenure reduce churn probability.  
+Decision threshold tuning plays a critical role in aligning model output with business priorities.
 
-📌 Key Insight
+---
 
-Lowering the decision threshold increased recall significantly, demonstrating the trade-off between detecting churners and minimizing false positives.
-=======
-# customer-churn-predictor
->>>>>>> 4087487b980c5b9606c871c48aa8740bd3ab6ac0
